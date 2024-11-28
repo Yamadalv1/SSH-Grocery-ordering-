@@ -1,0 +1,17 @@
+.gradle/
+build/
+
+.classpath
+.project
+.settings/
+*.iml
+.vscode/
+
+*.DS_Store
+Thumbs.db
+
+*.log
+*.tmp
+
+/mock_data.json
+
