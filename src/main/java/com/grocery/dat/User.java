@@ -1,4 +1,4 @@
-package main.java.com.grocery.dat;
+package com.grocery.dat;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package main.java.com.grocery.util;
+package com.grocery.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import main.java.com.grocery.dat.MockData;
+import com.grocery.dat.MockData;
 
 import java.io.File;
 import java.io.IOException;
