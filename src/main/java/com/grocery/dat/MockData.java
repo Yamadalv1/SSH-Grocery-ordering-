@@ -4,22 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MockData {
-    private List<Product> productCatalog;
-    private List<User> usersList = new ArrayList<>(); //modiefied
+    private final List<Product> productCatalog = new ArrayList<>();
+    private final List<User> usersList = new ArrayList<>(); 
 
     public List<Product> getProductCatalog(){
         return productCatalog;
     }
 
-    public void setProductCatalog(List<Product> productCatalog){
-        this.productCatalog = productCatalog;
+    public void setProductCatalog(Product products){
+        productCatalog.add(products);
     }
 
     public List<User> getUsers(){
-        return usersList; //modiefied
+        return usersList; 
     }
 
-    public void setUsers(User users){ //modified
-        usersList.add(users); // modiefied
+    public void setUsers(User users){
+        usersList.add(users); 
     }
 }
