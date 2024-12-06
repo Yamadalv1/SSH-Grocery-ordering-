@@ -3,7 +3,7 @@
         {
             "id": 1,
             "name": "Orange",
-            "price": "1.7",
+            "price": 1.7,
             "previousPrice": 2.0,
             "available": true,
             "category": "Fruits",
@@ -14,7 +14,7 @@
         {
             "id": 2,
             "name": "Milk",
-            "price": "2.0",
+            "price": 2.0,
             "previousPrice": 2.2,
             "available": true,
             "category": "Dairy",
