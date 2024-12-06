@@ -1,10 +1,11 @@
 package com.grocery.dat;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MockData {
     private List<Product> productCatalog;
-    private List<User> users;
+    private List<User> usersList = new ArrayList<>(); //modiefied
 
     public List<Product> getProductCatalog(){
         return productCatalog;
@@ -15,11 +16,10 @@ public class MockData {
     }
 
     public List<User> getUsers(){
-        return users;
+        return usersList; //modiefied
     }
 
-    public void setUsers(List<User> users){
-        this.users = users;
+    public void setUsers(User users){ //modified
+        usersList.add(users); // modiefied
     }
-    
 }
