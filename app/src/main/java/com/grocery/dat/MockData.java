@@ -1,25 +1,25 @@
 package com.grocery.dat;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MockData {
-    private List<Product> productCatalog;
-    private List<User> users;
+    private final List<Product> productCatalog = new ArrayList<>();
+    private final List<User> usersList = new ArrayList<>(); 
 
     public List<Product> getProductCatalog(){
         return productCatalog;
     }
 
-    public void setProductCatalog(List<Product> productCatalog){
-        this.productCatalog = productCatalog;
+    public void setProductCatalog(Product products){
+        productCatalog.add(products);
     }
 
     public List<User> getUsers(){
-        return users;
+        return usersList; 
     }
 
-    public void setUsers(List<User> users){
-        this.users = users;
+    public void setUsers(User users){
+        usersList.add(users); 
     }
-    
-}
+} 

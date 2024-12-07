@@ -23,4 +23,4 @@ public class OrderItemTest {
         assertEquals(0, orderItem.getProductId(), "product ID should be 0");
         assertEquals(0, orderItem.getQuantity(), "quantity should be 0");
     }
-}
+} 
