@@ -1,4 +1,4 @@
-package com.grocery.dat;
+package app.src.main.java.com.grocery.dat;
 
 import java.util.ArrayList;
 import java.util.List; 
