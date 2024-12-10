@@ -1,5 +1,6 @@
 package app.src.main.java.com.grocery.dat;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class User {
@@ -7,8 +8,9 @@ public class User {
     private String name;
     private String email;
     private String address;
+    private int household;
     private List<OrderItem> currentCart;
-    private List<Order> orderHistory;
+    private List<Order> orderHistory = new ArrayList<>();
 
     public int getId(){
         return id;
@@ -42,6 +44,14 @@ public class User {
         this.address = address;
     }
 
+    public int getHouseHold(){
+        return household;
+    }
+
+    public void setHouseHold(int houseHold){
+        this.household = houseHold;
+    }
+
     public List<OrderItem> getCurrentCart(){
         return currentCart;
     }
@@ -54,8 +64,8 @@ public class User {
         return orderHistory;
     }
 
-    public void setOrderHistory(List<Order> orderHistory){
-        this.orderHistory = orderHistory;
+    public void setOrderHistory(Order orderHistory){
+        this.orderHistory.add(orderHistory);
     }
 
 }
