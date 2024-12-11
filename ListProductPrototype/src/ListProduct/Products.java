@@ -1,4 +1,4 @@
-package ListProduct;
+package ListProductPrototype.src.ListProduct;
 
 public class Products {
     private int id;

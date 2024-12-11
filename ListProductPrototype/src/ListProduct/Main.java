@@ -1,4 +1,4 @@
-package ListProduct;
+package ListProductPrototype.src.ListProduct;
 
 import java.awt.*;
 import java.util.ArrayList;
