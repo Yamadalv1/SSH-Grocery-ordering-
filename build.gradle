@@ -21,10 +21,10 @@ repositories {
 sourceSets {
     main {
         java{
-            srcDirs = ['app/src/main/java', 'ListProductPrototype/src']
+            srcDirs = ['app/src/main/java']
         }
         resources {
-            srcDirs = ['app/src/main/resources', 'ListProductPrototype/pic']
+            srcDirs = ['app/src/main/resources']
         }
     }
 }
@@ -37,7 +37,7 @@ tasks.register('runBackend', JavaExec) {
     group = 'application'
     description = 'Runs the backend application'
     classpath = sourceSets.main.runtimeClasspath
-    mainClass.set('app.src.main.java.com.grocery.dat.Backend')
+    mainClass.set('app.src.main.java.com.grocery.dat.BackendTerminal')
     standardInput = System.in
 }
 
@@ -45,7 +45,8 @@ tasks.register('runGui', JavaExec) {
     group = 'application'
     description = 'Runs the GUI application'
     classpath = sourceSets.main.runtimeClasspath
-    mainClass.set('ListProductPrototype.src.ListProduct.Main')
+    mainClass.set('app.src.main.java.com.grocery.dat.Backend')
+    standardInput = System.in
 }
 
 defaultTasks 'build'
