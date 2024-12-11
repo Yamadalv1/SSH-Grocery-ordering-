@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 java {
@@ -20,20 +21,31 @@ repositories {
 sourceSets {
     main {
         java{
-            srcDirs = ['app/src/main/java']
+            srcDirs = ['app/src/main/java', 'ListProductPrototype/src']
         }
         resources {
-            srcDirs = ['app/src/main/resources']
+            srcDirs = ['app/src/main/resources', 'ListProductPrototype/pic']
         }
     }
 }
 
+application {
+    mainClass.set('app.src.main.java.com.grocery.dat.Backend')
+}
 
-tasks.register('run', JavaExec) {
+tasks.register('runBackend', JavaExec) {
     group = 'application'
-    description = 'Runs the main application'
+    description = 'Runs the backend application'
     classpath = sourceSets.main.runtimeClasspath
     mainClass.set('app.src.main.java.com.grocery.dat.Backend')
+    standardInput = System.in
+}
+
+tasks.register('runGui', JavaExec) {
+    group = 'application'
+    description = 'Runs the GUI application'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass.set('ListProductPrototype.src.ListProduct.Main')
 }
 
 defaultTasks 'build'
